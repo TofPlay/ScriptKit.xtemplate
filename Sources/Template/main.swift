@@ -97,15 +97,15 @@ public class Template : ScriptKit {
     
     program(version: "0.0.1", owner: "John Doe", year: "2017", info: "My ScriptKit command line tool")
     cmd("mycommand", title: "Short description of my command", help: lHelp,  handler: myCommand)
-        option(short: "a", long: "requiredWithValue", variable: "requiredWithValue", default: "requiredDefVal", optional: false, title: "My required option with value", help: lHelp)
-        option(short: "b", long: "optionalWithValue", variable: "optionalWithValue", default: "requiredDefVal", optional: true, title: "My optional option with value", help: lHelp)
-        option(short: "c", long: "optionalFlag", variable: "optionalFlag", optional: true, title: "My optional option flag", help: lHelp)
-        begin()
-          cmd("mysubcommand", title: "Description of my sub-command", handler: mySubCommand)
-            option(short: "a", long: "requiredWithValue", variable: "requiredWithValue", default: "requiredDefVal", optional: false, title: "My required option with value", help: lHelp)
-            option(short: "b", long: "optionalWithValue", variable: "optionalWithValue", default: "requiredDefVal", optional: true, title: "My optional option with value", help: lHelp)
-            option(short: "c", long: "optionalFlag", variable: "optionalFlag", optional: true, title: "My optional option flag", help: lHelp)
-        end()
+      option(short: "a", long: "requiredWithValue", variable: "requiredWithValue", value: "value", optional: false, title: "My required option with value", help: lHelp)
+      option(short: "b", long: "optionalWithValue", variable: "optionalWithValue", value: "value", optional: true, title: "My optional option with value", help: lHelp)
+      option(short: "c", long: "optionalFlag", variable: "optionalFlag", optional: true, title: "My optional option flag", help: lHelp)
+      begin()
+        cmd("mysubcommand", title: "Description of my sub-command", handler: mySubCommand)
+          option(short: "a", long: "requiredWithValue", variable: "requiredWithValue", value: "value", optional: false, title: "My required option with value", help: lHelp)
+          option(short: "b", long: "optionalWithValue", variable: "optionalWithValue", value: "value", optional: true, title: "My optional option with value", help: lHelp)
+          option(short: "c", long: "optionalFlag", variable: "optionalFlag", optional: true, title: "My optional option flag", help: lHelp)
+      end()
     
     run(arguments: CommandLine.arguments)
   }
@@ -115,8 +115,6 @@ public class Template : ScriptKit {
   // MARK: -> Public operators
   
   // MARK: -> Public methods
-  
-  // MARK: -> Public implementation protocol <#protocol name#>
   
   // MARK: -
   // MARK: Internal access (aka public for current module)
@@ -141,32 +139,6 @@ public class Template : ScriptKit {
   // MARK: -> Internal operators
   
   // MARK: -> Internal methods
-  
-  // MARK: -> Internal implementation protocol <#protocol name#>
-  
-  // MARK: -
-  // MARK: File Private access
-  // MARK: -
-  
-  // MARK: -> File Private enums
-  
-  // MARK: -> File Private structs
-  
-  // MARK: -> File Private class
-  
-  // MARK: -> File Private type alias
-  
-  // MARK: -> File Private static properties
-  
-  // MARK: -> File Private properties
-  
-  // MARK: -> File Private class methods
-  
-  // MARK: -> File Private init methods
-  
-  // MARK: -> File Private operators
-  
-  // MARK: -> File Private methods
   
   // MARK: -
   // MARK: Private access

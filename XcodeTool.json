@@ -1,0 +1,25 @@
+{
+  "list": [
+    "swift",
+    "md"
+  ],
+  "ignore": [
+    ".git"
+  ],
+  "remove": [
+    
+  ],
+  "protect": [
+    "Base on Tof Templates"
+  ],
+  "alias": {
+    "TARGET": "Template"
+  },
+  "items": [
+    {
+      "enable": true,
+      "original": "Template",
+      "new": "$(TARGET)"
+    }
+  ]
+}
